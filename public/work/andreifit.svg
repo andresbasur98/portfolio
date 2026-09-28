@@ -1,0 +1,14 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#B9B99F"/>
+  <rect x="52" y="52" width="1096" height="696" rx="10" fill="#111413"/>
+  <rect x="52" y="52" width="190" height="696" rx="10" fill="#181B19"/><rect x="82" y="85" width="108" height="18" rx="9" fill="#ECEBE4"/>
+  <g fill="#83877E"><rect x="82" y="158" width="90" height="10" rx="5"/><rect x="82" y="206" width="114" height="10" rx="5"/><rect x="82" y="254" width="78" height="10" rx="5"/><rect x="82" y="302" width="101" height="10" rx="5"/></g>
+  <circle cx="113" cy="686" r="20" fill="#C3A365"/><rect x="143" y="677" width="58" height="8" rx="4" fill="#ECEBE4"/><rect x="143" y="692" width="42" height="6" rx="3" fill="#777B74"/>
+  <text x="284" y="112" fill="#F0EFE8" font-family="Arial" font-size="22">Buenos días, Andrés</text><text x="284" y="142" fill="#81857E" font-family="Arial" font-size="13">Tu plan y progreso, en un solo lugar.</text>
+  <rect x="284" y="184" width="514" height="225" rx="8" fill="#1B1F1D" stroke="#F0EFE8" stroke-opacity=".1"/>
+  <text x="310" y="220" fill="#A9ACA5" font-family="Arial" font-size="12" letter-spacing="2">PROGRESO SEMANAL</text><text x="310" y="274" fill="#F0EFE8" font-family="Arial" font-size="38">Consistencia</text><text x="310" y="312" fill="#C3A365" font-family="Arial" font-size="22">Objetivo en curso</text>
+  <path d="M310 365C365 350 400 372 451 336S539 325 582 286S663 308 718 248S758 232 776 211" stroke="#C3A365" stroke-width="4" fill="none"/>
+  <rect x="824" y="184" width="278" height="225" rx="8" fill="#D5D4C8"/><text x="852" y="220" fill="#222622" font-family="Arial" font-size="12" letter-spacing="2">HOY</text><circle cx="963" cy="291" r="58" stroke="#78836F" stroke-width="14"/><path d="M963 233A58 58 0 0 1 1019 306" stroke="#222622" stroke-width="14"/><text x="938" y="299" fill="#222622" font-family="Arial" font-size="22">68%</text>
+  <rect x="284" y="436" width="252" height="250" rx="8" fill="#D5D4C8"/><rect x="560" y="436" width="262" height="250" rx="8" fill="#1B1F1D" stroke="#F0EFE8" stroke-opacity=".1"/><rect x="846" y="436" width="256" height="250" rx="8" fill="#1B1F1D" stroke="#F0EFE8" stroke-opacity=".1"/>
+  <text x="310" y="478" fill="#222622" font-family="Arial" font-size="14">Próxima sesión</text><text x="586" y="478" fill="#F0EFE8" font-family="Arial" font-size="14">Nutrición</text><text x="872" y="478" fill="#F0EFE8" font-family="Arial" font-size="14">Check-in</text>
+</svg>

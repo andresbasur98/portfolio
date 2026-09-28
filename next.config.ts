@@ -1,7 +1,14 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  turbopack: { root: process.cwd() },
+  outputFileTracingRoot: process.cwd(),
+  images: {
+    remotePatterns: [
+      { protocol: "https", hostname: "**.wp.com" },
+      { protocol: "https", hostname: "**.wordpress.com" },
+    ],
+  },
 };
 
 export default nextConfig;

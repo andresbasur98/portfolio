@@ -1,0 +1,15 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#A7AEA3"/>
+  <rect x="80" y="54" width="1040" height="692" rx="8" fill="#ECE9DF"/>
+  <rect x="80" y="54" width="1040" height="72" rx="8" fill="#F5F2EA"/>
+  <text x="120" y="96" fill="#29312C" font-family="Georgia" font-size="18">Pablo de Lucas</text><text x="960" y="96" fill="#29312C" font-family="Arial" font-size="12">PEDIR CITA →</text>
+  <line x1="120" y1="163" x2="1080" y2="163" stroke="#29312C" stroke-opacity=".18"/>
+  <text x="120" y="228" fill="#59685E" font-family="Arial" font-size="12" letter-spacing="3">PSICOLOGÍA EN LA SIERRA DE MADRID</text>
+  <text x="120" y="296" fill="#29312C" font-family="Georgia" font-size="48">Un espacio para entender</text><text x="120" y="350" fill="#29312C" font-family="Georgia" font-size="48">lo que te está pasando.</text>
+  <text x="120" y="408" fill="#606860" font-family="Arial" font-size="17">Terapia clara, cercana y basada en evidencia.</text>
+  <rect x="120" y="452" width="158" height="46" rx="23" fill="#29312C"/><text x="155" y="481" fill="#F5F2EA" font-family="Arial" font-size="13">CÓMO TRABAJO</text>
+  <rect x="704" y="200" width="320" height="420" rx="160" fill="#5F7468"/>
+  <path d="M761 585C790 508 827 439 865 373C899 314 942 256 990 220" stroke="#D4C7A7" stroke-width="3"/>
+  <circle cx="847" cy="406" r="54" fill="#99A492"/><circle cx="908" cy="319" r="35" fill="#C7BA9A"/>
+  <rect x="120" y="612" width="508" height="72" fill="#D8D5CC"/><text x="144" y="642" fill="#29312C" font-family="Arial" font-size="12">PRIMERA CONVERSACIÓN</text><text x="144" y="665" fill="#59605B" font-family="Arial" font-size="13">Sin compromiso · presencial y online</text>
+</svg>
