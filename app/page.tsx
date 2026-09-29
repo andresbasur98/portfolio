@@ -4,6 +4,7 @@ import { Capabilities } from "./components/capabilities";
 import { ContactCTA } from "./components/contact-cta";
 import { HeroSection } from "./components/hero-section";
 import { ArticlesSkeleton, LatestArticles } from "./components/latest-articles";
+import { LatestVideos } from "./components/latest-videos";
 import { ProjectGrid } from "./components/project-grid";
 import { LeftRail, RightRail } from "./components/rails";
 import { Results } from "./components/results";
@@ -45,6 +46,7 @@ export default function Home() {
             </div>
             <Suspense fallback={<ArticlesSkeleton />}><LatestArticles /></Suspense>
           </section>
+          <LatestVideos />
           <section className="about-strip" id="sobre-mi" aria-labelledby="about-title">
             <p className="eyebrow">Sobre mí</p>
             <h2 id="about-title">Trabajo en la intersección entre lo que el usuario necesita, lo que la tecnología permite y lo que el negocio debe conseguir.</h2>

@@ -31,4 +31,28 @@ export const radarItems: RadarItem[] = [
     href: "https://www.youtube.com/watch?v=Ar2DXQorEm4&t=1345s",
     meta: "Youtube · Video",
   },
+      {
+    source: "youtube",
+    title: "No te Hace Falta Dinero para Empezar un Negocio...",
+    href: "https://www.youtube.com/watch?v=ex7m5bKGL8E",
+    meta: "Youtube · Video",
+  },
+        {
+    source: "linkedin",
+    title: "Posicionando una web de 0 en 3 meses utilizando Search Console",
+    href: "https://www.linkedin.com/feed/update/urn:li:activity:7494026120351096832/",
+    meta: "LinkedIn · Post",
+  },
+          {
+    source: "reddit",
+    title: "I connected Google Search Console to AI via MCP",
+    href: "https://www.reddit.com/r/microsaas/comments/1wrv5kn/i_connected_google_search_console_to_ai_via_mcp/",
+    meta: "Reddit · Post",
+  },
+        {
+    source: "youtube",
+    title: "La psicología de los ganchos irresistibles",
+    href: "https://www.youtube.com/watch?v=hvDfbYFeznQ",
+    meta: "Youtube · Video",
+  },
 ];
