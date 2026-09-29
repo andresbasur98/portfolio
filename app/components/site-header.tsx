@@ -1,11 +1,11 @@
 type NavigationIcon = "work" | "services" | "about" | "articles" | "contact";
 
 const navigation: Array<{ label: string; href: string; icon: NavigationIcon }> = [
-  { label: "Proyectos", href: "#proyectos", icon: "work" },
-  { label: "Servicios", href: "#capacidades", icon: "services" },
-  { label: "Sobre mí", href: "#sobre-mi", icon: "about" },
-  { label: "Artículos", href: "#articulos", icon: "articles" },
-  { label: "Contacto", href: "#contacto", icon: "contact" },
+  { label: "Proyectos", href: "/#proyectos", icon: "work" },
+  { label: "Servicios", href: "/#capacidades", icon: "services" },
+  { label: "Sobre mí", href: "/#sobre-mi", icon: "about" },
+  { label: "Artículos", href: "/#articulos", icon: "articles" },
+  { label: "Contacto", href: "/#contacto", icon: "contact" },
 ];
 
 function NavIcon({ name }: { name: NavigationIcon }) {

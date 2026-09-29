@@ -1,4 +1,5 @@
 import { Suspense } from "react";
+import Link from "next/link";
 import { Capabilities } from "./components/capabilities";
 import { ContactCTA } from "./components/contact-cta";
 import { HeroSection } from "./components/hero-section";
@@ -40,7 +41,7 @@ export default function Home() {
           <section className="section articles-section" id="articulos" aria-labelledby="articles-title">
             <div className="section-heading compact">
               <div><p className="eyebrow">Ideas en abierto</p><h2 id="articles-title">Últimos artículos</h2></div>
-              <a className="text-link" href="https://andrescat2.wordpress.com/" target="_blank" rel="noreferrer">Ver archivo <span aria-hidden="true">↗</span></a>
+              <Link className="text-link" href="/articulos">Ver todos los artículos <span aria-hidden="true">→</span></Link>
             </div>
             <Suspense fallback={<ArticlesSkeleton />}><LatestArticles /></Suspense>
           </section>

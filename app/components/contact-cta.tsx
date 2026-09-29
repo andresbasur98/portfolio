@@ -7,7 +7,7 @@ export function ContactCTA() {
       </div>
       <div className="contact-action">
         <p>Cuéntame qué estás intentando mejorar: producto, visibilidad, conversión u operación.</p>
-        <span className="button button-light contact-placeholder">[Añadir email profesional]</span>
+        <span className="button button-light contact-placeholder">andresbasur98@gmail.com</span>
         <small>Madrid · Disponible para proyectos seleccionados</small>
       </div>
     </section>

@@ -26,13 +26,6 @@ export type Metric = {
   imageAlt: string;
 };
 
-export type ContentTeaserData = {
-  type: string;
-  title: string;
-  meta: string;
-  href: string;
-};
-
 export type SocialLink = {
   label: string;
   href?: string;

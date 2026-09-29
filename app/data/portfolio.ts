@@ -1,6 +1,5 @@
 import type {
   Capability,
-  ContentTeaserData,
   Metric,
   Project,
   SocialLink,
@@ -146,31 +145,10 @@ export const metrics: Metric[] = [
   },
 ];
 
-export const railTeasers: ContentTeaserData[] = [
-  {
-    type: "Proyecto destacado",
-    title: "AndreiFit: producto y operativa en un mismo sistema",
-    meta: "Caso en preparación",
-    href: "#proyectos",
-  },
-  {
-    type: "Último vídeo",
-    title: "[Añadir último vídeo publicado]",
-    meta: "Enlace pendiente",
-    href: "#contacto",
-  },
-  {
-    type: "Nota reciente",
-    title: "[Añadir aprendizaje reciente]",
-    meta: "Contenido pendiente",
-    href: "#articulos",
-  },
-];
-
 export const socialLinks: SocialLink[] = [
-  { label: "LinkedIn" },
-  { label: "GitHub" },
-  { label: "YouTube" },
+  { label: "LinkedIn", href: 'https://www.linkedin.com/in/andres-basurto/' },
+  { label: "GitHub", href: 'https://github.com/andresbasur98/' },
+  { label: "YouTube", href: 'https://www.youtube.com/@andresbasurto9106' },
 ];
 
 export const testimonials: Testimonial[] = [

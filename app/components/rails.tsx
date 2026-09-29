@@ -1,5 +1,11 @@
-import { railTeasers, stack } from "../data/portfolio";
-import type { ContentTeaserData } from "../types/portfolio";
+import Image from "next/image";
+import Link from "next/link";
+import { stack } from "../data/portfolio";
+import {
+  radarItems,
+  radarSources,
+  type RadarItem,
+} from "../data/radar";
 
 function ModuleHeader({ children, index }: { children: React.ReactNode; index: string }) {
   return <div className="module-header"><span>{children}</span><span>{index}</span></div>;
@@ -49,13 +55,40 @@ function StatusCard() {
   );
 }
 
-export function ContentTeaser({ teaser }: { teaser: ContentTeaserData }) {
-  return (
-    <a className="content-teaser" href={teaser.href}>
-      <span className="content-type">{teaser.type}</span>
+export function ContentTeaser({ teaser }: { teaser: RadarItem }) {
+  const source = radarSources[teaser.source];
+  const external = /^https?:\/\//i.test(teaser.href);
+  const content = (
+    <>
+      <span className="content-source">
+        <Image src={source.icon} alt="" width={24} height={24} />
+        <span className="content-type">{source.label}</span>
+      </span>
       <strong>{teaser.title}</strong>
-      <span className="content-meta">{teaser.meta}<i aria-hidden="true">↗</i></span>
-    </a>
+      <span className="content-meta">
+        {teaser.meta}
+        <i aria-hidden="true">{external ? "↗" : "→"}</i>
+      </span>
+    </>
+  );
+
+  if (external) {
+    return (
+      <a
+        className="content-teaser"
+        href={teaser.href}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {content}
+      </a>
+    );
+  }
+
+  return (
+    <Link className="content-teaser" href={teaser.href}>
+      {content}
+    </Link>
   );
 }
 
@@ -71,10 +104,10 @@ export function LeftRail({ mobile = false }: { mobile?: boolean }) {
 
 export function RightRail({ mobile = false }: { mobile?: boolean }) {
   return (
-    <aside className={mobile ? "contextual-rail contextual-content" : "desktop-rail right-rail"} aria-label="Contenido reciente">
+    <aside className={mobile ? "contextual-rail contextual-content" : "desktop-rail right-rail"} aria-label="En el radar">
       <div className="rail-title"><span>En el radar</span><span>Actualizado</span></div>
-      {railTeasers.map((teaser) => <ContentTeaser key={teaser.type} teaser={teaser} />)}
-      <a className="rail-all-link" href="#articulos">Ver todos los artículos <span aria-hidden="true">→</span></a>
+      {radarItems.map((teaser) => <ContentTeaser key={`${teaser.source}-${teaser.href}`} teaser={teaser} />)}
+      <Link className="rail-all-link" href="/articulos">Ver todos los artículos <span aria-hidden="true">→</span></Link>
     </aside>
   );
 }
