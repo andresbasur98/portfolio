@@ -1,4 +1,4 @@
-export type RadarSource = "reddit" | "youtube" | "linkedin" | "propio";
+export type RadarSource = "reddit" | "youtube" | "linkedin" | "propio" | "twitter";
 
 export type RadarItem = {
   source: RadarSource;
@@ -15,14 +15,15 @@ export const radarSources: Record<
   youtube: { label: "YouTube", icon: "/radar/youtube.svg" },
   linkedin: { label: "LinkedIn", icon: "/radar/linkedin.svg" },
   propio: { label: "Artículo propio", icon: "/radar/propio-v2.png" },
+  twitter: { label: "Artículo propio", icon: "/radar/twitter.svg" },
 };
 
 // Añade aquí las recomendaciones, siempre con la más reciente primero.
 export const radarItems: RadarItem[] = [
   {
     source: "propio",
-    title: "¡Hola mundo!",
-    href: "/articulos/hola-mundo",
+    title: "Cómo crear un portfolio con IA, Next.js y WordPress: guía paso a paso con prompts",
+    href: "/articulos/crear-portfolio-ia-nextjs-wordpress",
     meta: "Portfolio · Artículo",
   },
     {
@@ -54,5 +55,11 @@ export const radarItems: RadarItem[] = [
     title: "La psicología de los ganchos irresistibles",
     href: "https://www.youtube.com/watch?v=hvDfbYFeznQ",
     meta: "Youtube · Video",
+  },
+          {
+    source: "twitter",
+    title: "Ideas locas para monetizar tu visibilidad",
+    href: "https://x.com/marclou/status/2100923868257169808",
+    meta: "twitter · post · Marc Lou",
   },
 ];
