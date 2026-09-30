@@ -15,7 +15,7 @@ export const radarSources: Record<
   youtube: { label: "YouTube", icon: "/radar/youtube.svg" },
   linkedin: { label: "LinkedIn", icon: "/radar/linkedin.svg" },
   propio: { label: "Artículo propio", icon: "/radar/propio-v2.png" },
-  twitter: { label: "Artículo propio", icon: "/radar/twitter.svg" },
+  twitter: { label: "X / Twitter", icon: "/radar/twitter.svg" },
 };
 
 // Añade aquí las recomendaciones, siempre con la más reciente primero.

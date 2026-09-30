@@ -32,13 +32,13 @@ export default function Home() {
       <div className="page-grid">
         <LeftRail />
         <main className="main-column" id="contenido">
+          <div className="mobile-context mobile-radar-context"><RightRail mobile /></div>
           <HeroSection />
           <div className="mobile-context"><LeftRail mobile /></div>
           <ProjectGrid />
           <Capabilities />
           <Results />
           <TestimonialsSection />
-          <div className="mobile-context"><RightRail mobile /></div>
           <section className="section articles-section" id="articulos" aria-labelledby="articles-title">
             <div className="section-heading compact">
               <div><p className="eyebrow">Ideas en abierto</p><h2 id="articles-title">Últimos artículos</h2></div>
