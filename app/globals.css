@@ -256,7 +256,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .article-skeleton i:last-child { width: 70%; }
 
 .videos-section .section-heading { margin-bottom: 34px; }
-.videos-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.videos-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
 .video-card { min-width: 0; padding: 14px; border: 1px solid var(--line); background: var(--surface); transition: transform var(--ease), border-color var(--ease); }
 .video-card:hover { transform: translateY(-3px); border-color: var(--line-strong); }
 .video-card:only-child { grid-column: 1 / -1; }
