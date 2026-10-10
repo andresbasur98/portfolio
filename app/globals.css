@@ -84,23 +84,16 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .text-link::after { content: ""; position: absolute; bottom: 0; left: 0; width: 100%; height: 1px; background: currentColor; transform: scaleX(.28); transform-origin: left; opacity: .45; transition: transform var(--ease); }
 .text-link:hover::after { transform: scaleX(1); }
 .signal-panel { width: min(100%, 760px); margin: 58px auto 0; padding: 18px; border: 1px solid var(--line); background: var(--surface); text-align: left; }
-.signal-head { display: flex; align-items: center; justify-content: space-between; }
-.signal-head .eyebrow { margin: 0; }
-.signal-live { display: inline-flex; align-items: center; gap: 6px; color: var(--muted-2); font: 9px/1 var(--font-geist-mono); text-transform: uppercase; }
-.signal-live i { width: 5px; height: 5px; border-radius: 50%; background: var(--positive); }
-.signal-visual { margin-top: 32px; }
-.signal-axis { display: flex; justify-content: space-between; color: var(--muted-2); font: 8px/1 var(--font-geist-mono); text-transform: uppercase; }
-.signal-visual svg { display: block; width: 100%; height: auto; margin-top: 10px; overflow: visible; }
-.signal-grid { stroke: rgba(242,240,234,.06); stroke-width: 1; }
-.signal-line-muted { fill: none; stroke: rgba(242,240,234,.2); stroke-width: 1.5; }
-.signal-line { fill: none; stroke: var(--accent); stroke-width: 2; }
-.signal-steps { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 10px; border-top: 1px solid var(--line); }
-.signal-steps div { padding: 14px 10px 0 0; border-right: 1px solid var(--line); }
-.signal-steps div:last-child { padding-left: 10px; border: 0; }
-.signal-steps div:nth-child(2) { padding-left: 10px; }
-.signal-steps span, .signal-steps strong { display: block; }
-.signal-steps span { color: var(--muted-2); font: 8px/1 var(--font-geist-mono); }
-.signal-steps strong { margin-top: 7px; font-size: 10px; font-weight: 500; }
+.presentation-player { position: relative; aspect-ratio: 16 / 9; overflow: hidden; background: var(--background); }
+.presentation-media { display: block; width: 100%; height: 100%; object-fit: contain; }
+.presentation-play { position: absolute; top: 50%; left: 50%; display: grid; width: 62px; height: 62px; padding: 0; place-items: center; border: 1px solid var(--line-strong); border-radius: 50%; background: rgba(8, 9, 9, .78); color: var(--foreground); cursor: pointer; box-shadow: 0 12px 32px rgba(0, 0, 0, .35); backdrop-filter: blur(10px); transform: translate(-50%, -50%); transition: color var(--ease), background var(--ease), border-color var(--ease), transform var(--ease); }
+.presentation-play:hover { border-color: var(--accent); background: rgba(17, 18, 18, .92); color: var(--accent-soft); transform: translate(-50%, -50%) scale(1.04); }
+.presentation-play:focus-visible { outline-offset: 5px; }
+.presentation-play svg { width: 25px; height: 25px; margin-left: 3px; fill: currentColor; }
+.presentation-caption { position: absolute; right: 12px; bottom: 12px; padding: 7px 9px; border: 1px solid var(--line); background: rgba(8, 9, 9, .76); color: var(--muted); font: 9px/1 var(--font-geist-mono); letter-spacing: .04em; backdrop-filter: blur(8px); }
+.presentation-error { position: absolute; inset: auto 12px 12px 12px; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 10px 12px; border: 1px solid var(--line-strong); background: rgba(8, 9, 9, .92); color: var(--muted); font-size: 11px; backdrop-filter: blur(10px); }
+.presentation-error button { padding: 6px 9px; border: 1px solid var(--line-strong); background: var(--surface-raised); color: var(--foreground); font: 9px/1 var(--font-geist-mono); cursor: pointer; }
+.presentation-error button:hover { border-color: var(--accent); color: var(--accent-soft); }
 .credibility-line { width: 100%; display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 40px; border-top: 1px solid var(--line); color: var(--muted); font-size: 10px; text-transform: uppercase; letter-spacing: .04em; }
 .credibility-line span { padding: 18px 16px 0 0; border-right: 1px solid var(--line); }
 .credibility-line span:not(:first-child) { padding-left: 16px; }
@@ -443,7 +436,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .wordmark > span:last-child { display: none; }
   .hero h1 { font-size: 2.5rem; }
   .signal-panel { padding: 14px; }
-  .signal-steps strong { font-size: 9px; }
+  .presentation-play { width: 54px; height: 54px; }
+  .presentation-caption { right: 8px; bottom: 8px; font-size: 8px; }
   .testimonial-card { padding: 18px; }
   .testimonial-person { grid-template-columns: 76px 1fr; }
   .testimonial-image { width: 76px; }
