@@ -1,10 +1,10 @@
-type NavigationIcon = "work" | "services" | "about" | "articles" | "contact";
+type NavigationIcon = "work" | "services" | "articles" | "resources" | "contact";
 
 const navigation: Array<{ label: string; href: string; icon: NavigationIcon }> = [
   { label: "Proyectos", href: "/#proyectos", icon: "work" },
   { label: "Servicios", href: "/#capacidades", icon: "services" },
-  { label: "Sobre mí", href: "/#sobre-mi", icon: "about" },
   { label: "Artículos", href: "/#articulos", icon: "articles" },
+  { label: "Recursos", href: "/recursos", icon: "resources" },
   { label: "Contacto", href: "/#contacto", icon: "contact" },
 ];
 
@@ -15,11 +15,11 @@ function NavIcon({ name }: { name: NavigationIcon }) {
   if (name === "services") {
     return <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7.5 12 3l8 4.5-8 4.5-8-4.5Z" /><path d="m4 12 8 4.5 8-4.5M4 16.5l8 4.5 8-4.5" /></svg>;
   }
-  if (name === "about") {
-    return <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5" /><path d="M5 20c.7-4 3-6 7-6s6.3 2 7 6" /></svg>;
-  }
   if (name === "articles") {
     return <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l3 3v15H6V3Z" /><path d="M15 3v4h4M9 11h6M9 15h6" /></svg>;
+  }
+  if (name === "resources") {
+    return <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h14v16H5z" /><path d="M8 8h8M8 12h8M8 16h5" /></svg>;
   }
   return <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v12H9l-5 4V5Z" /><path d="M8 9h8M8 13h5" /></svg>;
 }

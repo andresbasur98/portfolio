@@ -16,12 +16,27 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     changeFrequency: "weekly",
     priority: 0.8,
   };
+  const resourcePages: MetadataRoute.Sitemap = [
+    {
+      url: new URL("/recursos", siteUrl).toString(),
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: new URL("/recursos/plantillas-email", siteUrl).toString(),
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+  ];
 
   try {
     const articles = await getPublishedArticles();
     return [
       home,
       archive,
+      ...resourcePages,
       ...articles.map((article) => ({
         url: new URL(
           `/articulos/${encodeURIComponent(article.slug)}`,
@@ -33,6 +48,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       })),
     ];
   } catch {
-    return [home, archive];
+    return [home, archive, ...resourcePages];
   }
 }

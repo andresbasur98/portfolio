@@ -9,6 +9,14 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "**.wordpress.com" },
     ],
   },
+  async headers() {
+    return [
+      {
+        source: "/recursos/plantillas-email/:file*.html",
+        headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow" }],
+      },
+    ];
+  },
 };
 
 export default nextConfig;
